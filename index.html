@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="vvod">
+      <textarea
+        name=""
+        id="inf"
+        cols="30"
+        rows="10"
+        style="height: 158px; padding: 2px; resize: none"
+      ></textarea>
+    </div>
+
+    <div class="sortirovka">
+      <div class="counter">
+        <button id="+">+</button>
+        <span id="id">0</span>
+        <button id="-">-</button>
+      </div>
+      <button id="sort">sort</button>
+      <textarea
+        name=""
+        id="res"
+        cols="30"
+        rows="10"
+        style="height: 102px; padding: 2px; resize: none"
+      ></textarea>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #inf {
+      height: 90px;
+    }
+    #res {
+      height: 35px;
+    }
+    body {
+      display: flex;
+      margin: 10px;
+    }
+    .sortirovka {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+    }
+    .vvod {
+      margin-right: 10px;
+    }
+    .counter {
+      margin-bottom: 7px;
+    }
+    #sort {
+      margin-bottom: 10px;
+    }
+    textarea {
+      resize: none;
+    }
+  </style>
+  <script src="js.js"></script>
+</html>
